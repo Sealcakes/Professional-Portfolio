@@ -7,27 +7,57 @@
 }
 
 body {
-    background-color: #5e5e5e;
+    position: relative;
 }
 
 header {
-    background-color: #2268f5;
     position: absolute;
+    z-index: 1;
     width: 100%;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 header h1 {
-    margin-left: 20px;
+    position: absolute;
+    color: white;
+    left: 140px;
+    top: 12px;
+}
+
+.landing-page-images {
+    position: relative;
+}
+
+#main-background-image {
+    position: relative;
+    width: 100%;
+    height: 950px;
+}
+
+#seal-logo {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    height: 100px;
+    margin: 20px;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-around;
     list-style: none;
-    padding: 0 15px;
+    justify-content: flex-end;
+    margin-right: 0px;
+    z-index: 2;
+}
+
+.navbar li {
+    padding: 0px 10px 0px 10px;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px 20px 0 0;
 }
 
 .navbar li:hover {
-
+    text-decoration: underline;
 }
