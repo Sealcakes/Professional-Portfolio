@@ -53,11 +53,12 @@ header h1 {
 
 .landing-page p {
     position: absolute;
-    left: 20%;
+    left: 25%;
     top: 600px;
     color: white;
     font-size: 30px;
     font-weight: 300;
+    width: 500px;
 }
 
 #main-background-image {
