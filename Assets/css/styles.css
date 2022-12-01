@@ -10,8 +10,12 @@
     width: 10px;
 }
 
+::-webkit-scrollbar-track {
+    background: #999;
+  }
+
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #777;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -99,4 +103,21 @@ header h1 {
     left: 30%;
     color: white;
     font-size: 70px;
+}
+
+.work-section {
+    position: relative;
+    background-color: #4d4e4f;
+    margin-top: -4px;
+    min-width: 1600px;
+    height: 940px;
+}
+
+.work-section h2 {
+    position: absolute;
+    left: 250px;
+    top: 150px;
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
 }
