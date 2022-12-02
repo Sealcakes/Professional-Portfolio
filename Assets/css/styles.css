@@ -44,52 +44,6 @@ header h1 {
     top: 12px;
 }
 
-.hero {
-    display: flex;
-}
-
-.wrapper .hero {
-    display: flex;
-    background-image: url(../images/coding2.jpg);
-    height: 698px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: blur(6px);
-    transform: scale(1.1);
-}
-
-.wrapper #seal-logo {
-    position: absolute;
-    top: 0;
-}
-
-.wrapper h2 {
-    position: absolute;
-    top: 150px;
-    right: 50px;
-    color: white;
-    font-size: 70px;
-}
-
-.wrapper p {
-    position: absolute;
-    right: 130px;
-    top: 550px;
-    color: white;
-    font-size: 30px;
-    font-weight: 400;
-    width: 500px;
-}
-
-
-#seal-logo {
-    position: flex;
-    z-index: 1;
-    border-radius: 50%;
-    height: 100px;
-    margin: 20px;
-}
-
 .navbar {
     display: flex;
     list-style: none;
@@ -127,6 +81,91 @@ header h1 {
     width: 100%;
 }
 
+.hero {
+    display: flex;
+}
+
+.wrapper .hero {
+    display: flex;
+    background-image: url(../images/coding2.jpg);
+    height: 698px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(6px);
+    transform: scale(1.1);
+}
+
+.wrapper #seal-logo {
+    position: absolute;
+    top: 0;
+}
+
+.wrapper h2 {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    color: white;
+    font-size: 70px;
+}
+
+.wrapper p {
+    position: absolute;
+    right: 130px;
+    top: 550px;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    width: 500px;
+}
+
+#seal-logo {
+    display: flex;
+    z-index: 1;
+    border-radius: 50%;
+    height: 100px;
+    margin: 20px;
+}
+
+.current-project-container {
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    width: 766px;
+    height: 342px;
+    z-index: 3;
+    
+}
+
+.current-project-container h3 {
+    color: white;
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.current-project-container img {
+    position: absolute;
+    top: 80px;
+    
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 1s ease;
+    cursor: pointer;
+    
+    
+}
+
+.current-project-container img:hover {
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    border-radius: 20px;
+    filter: none;
+    transition: 1s ease;
+}
+
 .work-section {
     position: relative;
     background-color: #4d4e4f;
@@ -146,6 +185,10 @@ header h1 {
 
 @media screen and (max-width: 992px) {
     nav {
+        display: none;
+    }
+
+    .current-project-container {
         display: none;
     }
 }
