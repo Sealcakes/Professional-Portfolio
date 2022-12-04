@@ -4,47 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./Assets/css/normalize.css"/>
     <link rel="stylesheet" href="./Assets/css/styles.css"/>
-    <title>Taylor Seal Portfolio</title>
+
+    <title>Professional Portfolio</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Taylor <br>Seal</h1>
-            <nav>
-                <ul class="navbar">
-                    <li class="nav-menu">
-                        <a href="#work-header" class="nav-link">ABOUT</a>
-                    </li>
-                    <li class="nav-menu">
-                        <a href="#" class="nav-link">PROJECTS</a>
-                    </li>
-                    <li class="nav-menu">
-                        <a href="#" class="nav-link">CONTACT</a>
-                    </li>
-                    <li class="nav-menu">
-                        <a href="#" class="nav-link">RESUME</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div class="wrapper">
-            <div class="hero"></div>
-            <img id="seal-logo" src="./Assets/images/seal_logo.png" alt="white silhouette of a seal on a black background"/>
-            <div class="current-project-container">
-                <h3>Most Recent Project</h3>
-                <a href="https://sealcakes.github.io/Module-2-Mini-Project/"><img src="./Assets/images/current-project-screenshot.jpg" alt="screenshot of a webpage, title says CSS Snippet Cheatsheet"/></a>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./Assets/images/seal_logo.png" alt="">
+                <h1><span>Taylor</span> <span>Seal</span></h1>
+                
             </div>
-            <h2>Professional <br>Portfolio</h2>
+            <ul class="navbar">
+                <li class="nav-menu">
+                    <a href="#work-header" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-menu">
+                    <a href="#" class="nav-link">PROJECTS</a>
+                </li>
+                <li class="nav-menu">
+                    <a href="#" class="nav-link">CONTACT</a>
+                </li>
+                <li class="nav-menu">
+                    <a href="#" class="nav-link">RESUME</a>
+                </li>
+            </ul>
+            <box-icon id="hamburger" name='menu' color="white" size="lg"></box-icon>
+        </nav>
+        <div class="header-content">
+            <h1>Professional Portfolio</h1>
             <p>Take a look around my projects, glance at my resume and if you feel like it reach out to me.</p>
         </div>
-        <section class="project-section">
-            <h2 id="project-header">PROJECTS</h2>
-            <img src="./Assets/images/test1.jpg" alt="">
-            <img src="./Assets/images/test2.jpg" alt="">
-            </div>    
-        </section>
-    </div>
+    </header>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./Assets/JavaScript/script.js"></script>
 </body>
 </html>
