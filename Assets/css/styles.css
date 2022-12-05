@@ -238,10 +238,10 @@ nav ul li a:hover:before {
 /* Main Projects Section */
 
 .projects {
-    border-top: 5px solid black;
+    border-top: 5px solid grey;
     display: flex;
     flex-direction: column;
-    background-color:rgb(70, 70, 70)
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)),#00CEDE;
 }
 
 .row1 {
@@ -319,7 +319,7 @@ nav ul li a:hover:before {
 
 /* About Me Section */
 .about-me-section {
-    border-top: 5px solid black;
+    border-top: 5px solid grey;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(../images/coding5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -356,6 +356,30 @@ nav ul li a:hover:before {
 
 /* Contact Me Section */
 
+.contact-me-section {
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid grey;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)),#00CEDE;
+}
+
+#contact-me-h1 {
+    display: flex;
+    color: white;
+    margin-left: 50px;
+}
+
+.contact-methods {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.contact-methods p {
+    color: white;
+    font-size: 1.6rem;
+}
 
 /* Media Queries */
 
@@ -428,5 +452,15 @@ nav ul li a:hover:before {
 
     .about-header img {
         width: 100%;
+    }
+
+    .contact-methods {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .contact-methods a {
+        margin: 16px 0;
     }
 }
