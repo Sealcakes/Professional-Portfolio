@@ -349,6 +349,7 @@ nav ul li a:hover:before {
 .about-header img {
     width: 50%;
     border-radius: 50%;
+    border: 5px solid white;
 }
 
 .about-me-text {
@@ -452,11 +453,21 @@ nav ul li a:hover:before {
 
     .about-me-section {
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 
+    .about-header {
+        margin: 0;
+    }
+
     .about-header img {
-        width: 100%;
+        width: 150%;
+        margin: 0;
+    }
+
+    .about-me-text p {
+        text-align: center;
     }
 
     .contact-methods {
